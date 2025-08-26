@@ -1,9 +1,12 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
-  margin: 0;
-  background: #0a0a0f;
-  font-family: 'Orbitron', sans-serif !important;
-  overflow-x: hidden;
-  position: relative;
+    margin: 0;
+    background: #0a0a0f;
+    font-family: 'Orbitron', sans-serif !important;
+    overflow-x: hidden;
+    position: relative;
 }
 
 #tsparticles {
