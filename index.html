@@ -17,25 +17,79 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">   
   </head>
   <body>
+    <div id="tsparticles"></div>
+    <header class="d-flex justify-content-center align-items-center pt-5 mb-4">
+      <nav id="navbar" class="d-flex justify-content-around align-items-center">
+          <a href="#" class="nav-item">Home</a>
+          <a href="#skills" class="nav-item">Skills</a>
+          <a href="#" class="nav-item">Projects</a>
+          <a href="#" class="nav-item">Contact</a>
+      </nav>
+    </header>
     <div class="container">
-      <div id="tsparticles"></div>
-      <header class="d-flex justify-content-center align-items-center pt-5 mb-4">
-        <nav id="navbar" class="d-flex justify-content-between align-items-center">
-            <a href="#" class="nav-item">Home</a>
-            <a href="#" class="nav-item">Skills</a>
-            <a href="#" class="nav-item">Projects</a>
-            <a href="#" class="nav-item">Contact</a>
-        </nav>
-      </header>
-      <div class="container">
-        <div class="description-section d-flex justify-content-center align-items-center flex-column gap-5">
-            <div class="img-div rounded-circle mt-5">
-                <img src="imgs/man-on-laptop.png" alt="An image describes portfolio owner" class="rounded-circle" width="100%" height="100%">
-            </div>
-            <h2 class="fw-bold gradient-text name my-3">Mohammad Al Musa</h2>
-            <p class="specialists">Cyber Security Student, FullStack Developer</p>
+      <div class="description-section d-flex justify-content-center align-items-center flex-column gap-5">
+          <div class="img-div rounded-circle mt-5">
+              <img src="imgs/man-on-laptop.png" alt="An image describes portfolio owner" class="rounded-circle" width="100%" height="100%">
+          </div>
+          <h2 class="fw-bold gradient-text name my-3">Mohammad Al Musa</h2>
+          <p class="specialists">Cyber Security Student, FullStack Developer</p>
+      </div>
+    </div>
+    <div class="container d-flex justify-content-center align-items-center gap-3 my-4">
+      <div class="specialist-card d-flex justify-content-center align-items-center flex-column">
+        <h4 class="gradient-text text-center">Cyber Security</h4>
+        <p class="specialists text-center">Focused on securing digital systems and designing intelligent network infrastructures, 
+      with experience in risk management, ethical hacking, IoT, and modern networking protocols.</p>
+      </div>
+      <div class="specialist-card d-flex justify-content-center align-items-center flex-column">
+        <h4 class="gradient-text text-center">FullStack Developer</h4>
+        <p class="specialists text-center">Building responsive web applications using HTML, CSS, JavaScript, and Bootstrap for the frontend, 
+      combined with Flask for backend development and integration.</p>
+      </div>
+      <div class="specialist-card d-flex justify-content-center align-items-center flex-column">
+        <h4 class="gradient-text text-center">Networking</h4>
+        <p class="specialists text-center">Exploring advanced networking concepts, routing and switching, and enhancing connectivity solutions 
+      with a practical and security-oriented perspective.</p>
+      </div>
+    </div>
+    <div id="skills" class="container d-flex justify-content-center align-items-center gap-3 my-5 flex-column">
+      <h2 class="gradient-text fw-bold mb-3 mt-5">Skills</h2>
+      <div class="container d-flex justify-content-center align-items-center gap-3">
+        <div class="specialist-card d-flex justify-content-start align-items-start flex-column p-4">
+          <i class="bi bi-fingerprint skill-icon rounded-circle"></i>
+          <h5 class="gradient-text my-3">Cyber Security</h5>
+          <p class="specialists">
+            ONetwork Security, Web Security, Penetration Testing, 
+            Vulnerability Assessment, Cryptography, Secure Coding
+          </p>
+        </div>
+        <div class="specialist-card d-flex justify-content-start align-items-start flex-column p-4">
+          <i class="bi bi-code-slash skill-icon rounded-circle"></i>
+          <h5 class="gradient-text my-3">Web Developing</h5>
+          <p class="specialists">
+            HTML5, CSS3, JavaScript (ES6+), Bootstrap, Responsive Design, 
+            Flask, REST APIs, Authentication, MySQL/SQLite
+          </p>
+        </div>
+        <div class="specialist-card d-flex justify-content-start align-items-start flex-column p-4">
+          <i class="bi bi-router skill-icon rounded-circle"></i>
+          <h5 class="gradient-text my-3">Networks</h5>
+          <p class="specialists">
+            TCP/IP, Routing & Switching, WireShark, Netwroks Security Basics, 
+            Packet Analasis / Traffic Sniffing, VLANs & Subnetting
+          </p>
+        </div>
+        <div class="specialist-card d-flex justify-content-start align-items-start flex-column p-4">
+          <i class="bi bi-patch-plus skill-icon rounded-circle"></i>
+          <h5 class="gradient-text my-3">Bonus Skills</h5>
+          <p class="specialists">
+            Git & GitHub, Linux basics, Deployment, Fast-Learning, 
+            Debugging & Testing, Problem Solving, Teamwork
+          </p>
+
         </div>
       </div>
     </div>

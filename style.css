@@ -31,8 +31,10 @@ header{
     height: 4rem !important;
 }
 nav{
+    z-index: 9999;
     width: 40% !important;
-    height: 100% !important;
+    height: 3rem !important;
+    position: fixed !important;
     border: 1px solid rgba(255,255,255,0.08);
     background: linear-gradient(
         90deg,
@@ -45,27 +47,27 @@ nav{
         0 10px 30px rgba(0,0,0,0.45),
         inset 0 1px 0 rgba(255,255,255,0.06);
     border-radius: 24px;
-    padding: 1.2rem 2rem;
+    padding: 1.2rem;
 }
 a{
     text-decoration: none !important;
 }
 
 .nav-item, .nav-item:hover{
-    font-size: clamp(0.7rem, 1.2vw, 3rem);
+    font-size: clamp(0.8rem, 1.2vw, 3rem);
     color: aliceblue;
     font-weight: bold;
     transition: 0.3s ease-in-out background-color;
 }
 .nav-item.active{
-    background: linear-gradient(90deg, #8A2BE2, #1E90FF, #00BFFF, #1E90FF, #8A2BE2);
+    background: linear-gradient(90deg, #8A2BE2, #1E90FF, #8A2BE2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 1px 5px #8A2BE2 !important;
     transition: 0.2s ease-out all;
 }
 .gradient-text {
-    background: linear-gradient(120deg, #8A2BE2, #1E90FF, #00BFFF, #1E90FF, #8A2BE2);
+    background: linear-gradient(120deg, #8A2BE2, #1E90FF, #8A2BE2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -76,8 +78,8 @@ a{
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0,0,0,0.25);
-  border: 1px solid #1E90FF;
-  padding-bottom: 20px !important;
+  border: 3px solid #1E90FF;
+  padding-bottom: 15px !important;
   border-radius: 50% !important;
 }
 
@@ -90,11 +92,58 @@ a{
     font-size: clamp(1.5rem, 2.8vw, 3rem);
 }
 .specialists{
-    font-size: clamp(0.8rem, 1.2vw, 3rem);
+    font-size: clamp(0.7rem, 1.1vw, 2.7rem);
     color: aliceblue;
 }
+
+.container {
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.specialist-card{
+    flex-grow: 1;
+    flex-basis: clamp(5rem, 20%, 15rem);
+    width: clamp(5rem, 5vw, 15rem);
+    height: fit-content !important;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: linear-gradient(
+        90deg,
+        rgba(54, 54, 54, 0.16),
+        rgba(119, 119, 119, 0.12)
+    );
+    backdrop-filter: blur(12px) saturate(140%);
+    -webkit-backdrop-filter: blur(12px) saturate(140%);
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.45),
+        inset 0 1px 0 rgba(255,255,255,0.06);
+    border-radius: 24px;
+    padding: 1rem;
+    transition: all 0.4s ease;
+}
+.skill-icon{
+    font-size: clamp(1.2rem, 1.1vw, 2.7rem);
+    color: aliceblue;
+    background: linear-gradient(120deg, #8A2BE2, #1E90FF, #8A2BE2) !important;
+    padding: 0.6rem 0.9rem !important;
+}
+
+.specialist-card:hover{
+    box-shadow: 0 0px 20px rgba(138, 43, 226, 0.3),
+        inset 0 0 20px rgba(30, 144, 255, 0.2);
+    transition: all 0.4s ease;
+}
+
+
+
+
+
 @media(max-width: 1080px) {
     nav{
         width: 80% !important;
+    }
+    .specialist-card{
+        flex-basis: 90% !important;
+        height: auto !important;
     }
 }
