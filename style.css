@@ -163,6 +163,46 @@ a{
     padding: 0 !important;
 }
 
+.contact-btn{
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: linear-gradient(
+        90deg,
+        rgba(54, 54, 54, 0.16),
+        rgba(119, 119, 119, 0.12)
+    );
+    backdrop-filter: blur(12px) saturate(140%);
+    -webkit-backdrop-filter: blur(12px) saturate(140%);
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.45),
+        inset 0 1px 0 rgba(255,255,255,0.06);
+    padding: 0.6rem 0.9rem;
+    color: aliceblue;
+    transition: cubic-bezier(0.7, 1, 0.7, 0.7) 0.2s all;
+}
+.contact-btn:hover{
+    transform: translateY(-5px);
+}
+.github:hover{
+    color: aliceblue;
+    border-color: black;
+    background-color: black;
+}
+.linkedin:hover{
+    color: aliceblue;
+    border-color: #1E90FF;
+    background-color: #1E90FF;
+}
+.instagram:hover{
+    color: aliceblue;
+    border-color: rgb(255, 0, 106);
+    background-color: rgb(255, 0, 106);
+}
+.envelope:hover{
+    color: aliceblue;
+    border-color: black;
+    background-color: black;
+}
 @media(max-width: 1080px) {
     nav{
         width: 80% !important;
