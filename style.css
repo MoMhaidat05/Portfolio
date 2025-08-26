@@ -101,7 +101,7 @@ a{
   flex-wrap: wrap;
 }
 
-.specialist-card{
+.card-div{
     flex-grow: 1;
     flex-basis: clamp(5rem, 20%, 15rem);
     width: clamp(5rem, 5vw, 15rem);
@@ -128,21 +128,46 @@ a{
     padding: 0.6rem 0.9rem !important;
 }
 
-.specialist-card:hover{
+.card-div:hover{
     box-shadow: 0 0px 20px rgba(138, 43, 226, 0.3),
         inset 0 0 20px rgba(30, 144, 255, 0.2);
     transition: all 0.4s ease;
 }
 
+.project-img{
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
+}
 
+.project-link {
+    color: aliceblue !important;
+    background: linear-gradient(
+        90deg,
+        rgba(137, 43, 226, 0.3) 0%,
+        rgba(137, 43, 226, 0.05) 100%
+    );
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.4s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: 1px solid rgba(137, 43, 226, 0.3);
+}
 
+.project-link:hover {
+    color: aliceblue !important;
+    background-size: 100% 100%;
+}
 
+.project-card{
+    padding: 0 !important;
+}
 
 @media(max-width: 1080px) {
     nav{
         width: 80% !important;
     }
-    .specialist-card{
+    .card-div{
         flex-basis: 90% !important;
         height: auto !important;
     }
