@@ -23,115 +23,116 @@
     <div id="tsparticles"></div>
     <header class="d-flex justify-content-center align-items-center pt-5 mb-4">
       <nav id="navbar" class="d-flex justify-content-around align-items-center">
-          <a href="#" class="nav-item">Home</a>
+          <a href="#home" class="nav-item">Home</a>
           <a href="#skills" class="nav-item">Skills</a>
           <a href="#projects" class="nav-item">Projects</a>
           <a href="#contact" class="nav-item">Contact</a>
       </nav>
     </header>
-    <div class="container">
-      <div class="description-section d-flex justify-content-center align-items-center flex-column gap-5">
-          <div class="img-div rounded-circle mt-5">
-              <img src="imgs/man-on-laptop.png" alt="An image describes portfolio owner" class="rounded-circle" width="100%" height="100%">
+    <div class="container" id="home">
+      <div class="container">
+        <div class="description-section d-flex justify-content-center align-items-center flex-column gap-5">
+            <div class="img-div rounded-circle mt-5">
+                <img src="imgs/man-on-laptop.png" alt="An image describes portfolio owner" class="rounded-circle" width="100%" height="100%">
+            </div>
+            <h2 class="fw-bold gradient-text name my-3">Mohammad Al Musa</h2>
+            <p class="specialists">Cyber Security Student, FullStack Developer</p>
+        </div>
+      </div>
+      <div class="container d-flex justify-content-center align-items-center gap-3 my-4">
+        <div class="specialist-card card-div d-flex justify-content-center align-items-center flex-column">
+          <h4 class="gradient-text text-center">Cyber Security</h4>
+          <p class="specialists text-center">Focused on securing digital systems and designing intelligent network infrastructures, 
+        with experience in risk management, ethical hacking, IoT, and modern networking protocols.</p>
+        </div>
+        <div class="specialist-card card-div d-flex justify-content-center align-items-center flex-column">
+          <h4 class="gradient-text text-center">FullStack Developer</h4>
+          <p class="specialists text-center">Building responsive web applications using HTML, CSS, JavaScript, and Bootstrap for the frontend, 
+        combined with Flask for backend development and integration.</p>
+        </div>
+        <div class="specialist-card card-div d-flex justify-content-center align-items-center flex-column">
+          <h4 class="gradient-text text-center">Networking</h4>
+          <p class="specialists text-center">Exploring advanced networking concepts, routing and switching, and enhancing connectivity solutions 
+        with a practical and security-oriented perspective.</p>
+        </div>
+      </div>
+      <div id="skills" class="container d-flex justify-content-center align-items-center gap-3 my-5 flex-column">
+        <h2 class="gradient-text fw-bold mb-3 mt-5">Skills</h2>
+        <div class="container d-flex justify-content-center align-items-center gap-3">
+          <div class="specialist-card card-div d-flex justify-content-start align-items-start flex-column p-4">
+            <i class="bi bi-fingerprint skill-icon rounded-circle"></i>
+            <h5 class="gradient-text my-3">Cyber Security</h5>
+            <p class="specialists">
+              Network Security, Web Security, Penetration Testing, 
+              Vulnerability Assessment, Cryptography, Secure Coding
+            </p>
           </div>
-          <h2 class="fw-bold gradient-text name my-3">Mohammad Al Musa</h2>
-          <p class="specialists">Cyber Security Student, FullStack Developer</p>
-      </div>
-    </div>
-    <div class="container d-flex justify-content-center align-items-center gap-3 my-4">
-      <div class="specialist-card card-div d-flex justify-content-center align-items-center flex-column">
-        <h4 class="gradient-text text-center">Cyber Security</h4>
-        <p class="specialists text-center">Focused on securing digital systems and designing intelligent network infrastructures, 
-      with experience in risk management, ethical hacking, IoT, and modern networking protocols.</p>
-      </div>
-      <div class="specialist-card card-div d-flex justify-content-center align-items-center flex-column">
-        <h4 class="gradient-text text-center">FullStack Developer</h4>
-        <p class="specialists text-center">Building responsive web applications using HTML, CSS, JavaScript, and Bootstrap for the frontend, 
-      combined with Flask for backend development and integration.</p>
-      </div>
-      <div class="specialist-card card-div d-flex justify-content-center align-items-center flex-column">
-        <h4 class="gradient-text text-center">Networking</h4>
-        <p class="specialists text-center">Exploring advanced networking concepts, routing and switching, and enhancing connectivity solutions 
-      with a practical and security-oriented perspective.</p>
-      </div>
-    </div>
-    <div id="skills" class="container d-flex justify-content-center align-items-center gap-3 my-5 flex-column">
-      <h2 class="gradient-text fw-bold mb-3 mt-5">Skills</h2>
-      <div class="container d-flex justify-content-center align-items-center gap-3">
-        <div class="specialist-card card-div d-flex justify-content-start align-items-start flex-column p-4">
-          <i class="bi bi-fingerprint skill-icon rounded-circle"></i>
-          <h5 class="gradient-text my-3">Cyber Security</h5>
-          <p class="specialists">
-            Network Security, Web Security, Penetration Testing, 
-            Vulnerability Assessment, Cryptography, Secure Coding
-          </p>
+          <div class="specialist-card card-div d-flex justify-content-start align-items-start flex-column p-4">
+            <i class="bi bi-code-slash skill-icon rounded-circle"></i>
+            <h5 class="gradient-text my-3">Web Developing</h5>
+            <p class="specialists">
+              HTML5, CSS3, JavaScript (ES6+), Bootstrap, Responsive Design, 
+              Flask, REST APIs, Authentication, MySQL/SQLite
+            </p>
+          </div>
+          <div class="specialist-card card-div d-flex justify-content-start align-items-start flex-column p-4">
+            <i class="bi bi-router skill-icon rounded-circle"></i>
+            <h5 class="gradient-text my-3">Networks</h5>
+            <p class="specialists">
+              TCP/IP, Routing & Switching, WireShark, Networks Security Basics, 
+              Packet Analysis / Traffic Sniffing, VLANs & Subnetting
+            </p>
+          </div>
+          <div class="specialist-card card-div d-flex justify-content-start align-items-start flex-column px-3">
+            <i class="bi bi-patch-plus skill-icon rounded-circle"></i>
+            <h5 class="gradient-text my-3">Bonus Skills</h5>
+            <p class="specialists">
+              Git & GitHub, Linux basics, Deployment, Fast-Learning, 
+              Debugging & Testing, Problem Solving, Teamwork
+            </p>
+          </div>
         </div>
-        <div class="specialist-card card-div d-flex justify-content-start align-items-start flex-column p-4">
-          <i class="bi bi-code-slash skill-icon rounded-circle"></i>
-          <h5 class="gradient-text my-3">Web Developing</h5>
-          <p class="specialists">
-            HTML5, CSS3, JavaScript (ES6+), Bootstrap, Responsive Design, 
-            Flask, REST APIs, Authentication, MySQL/SQLite
-          </p>
-        </div>
-        <div class="specialist-card card-div d-flex justify-content-start align-items-start flex-column p-4">
-          <i class="bi bi-router skill-icon rounded-circle"></i>
-          <h5 class="gradient-text my-3">Networks</h5>
-          <p class="specialists">
-            TCP/IP, Routing & Switching, WireShark, Networks Security Basics, 
-            Packet Analysis / Traffic Sniffing, VLANs & Subnetting
-          </p>
-        </div>
-        <div class="specialist-card card-div d-flex justify-content-start align-items-start flex-column px-3">
-          <i class="bi bi-patch-plus skill-icon rounded-circle"></i>
-          <h5 class="gradient-text my-3">Bonus Skills</h5>
-          <p class="specialists">
-            Git & GitHub, Linux basics, Deployment, Fast-Learning, 
-            Debugging & Testing, Problem Solving, Teamwork
-          </p>
-        </div>
-      </div>
-      <div class="container d-flex justify-content-center align-items-center gap-3 flex-column my-5" id="projects">
-        <h2 class="gradient-text fw-bold mb-3 mt-5">Projects</h2>
-        <div class="container d-flex justify-content-center align-items-center flex-row">
-          <div class="project-card card-div d-flex flex-column justify-content-start align-items-start pb-5">
-            <img src="imgs/portfolio.png" alt="Subly project display image" width="100%" class="project-img">
-            <div class="mx-4">
-              <h5 class="gradient-text fw-bold my-4">Portfolio</h5>
-              <p class="specialists mb-4">I built a personal web app showcasing my skills and projects with a sleek hacking/gaming-inspired vibe. It features responsive design, interactive sections, and smooth animations to highlight my work and journey as a developer.</p>
-              <a href="https://github.com/MoMhaidat05/Portfolio" class="project-link" target="_blank"><i class="bi bi-box-arrow-up-right"></i> Github Link</a>
+        <div class="container d-flex justify-content-center align-items-center gap-3 flex-column my-5" id="projects">
+          <h2 class="gradient-text fw-bold mb-3 mt-5">Projects</h2>
+          <div class="container d-flex justify-content-center align-items-center flex-row">
+            <div class="project-card card-div d-flex flex-column justify-content-start align-items-start pb-5">
+              <img src="imgs/portfolio.png" alt="Subly project display image" width="100%" class="project-img">
+              <div class="mx-4">
+                <h5 class="gradient-text fw-bold my-4">Portfolio</h5>
+                <p class="specialists mb-4">I built a personal web app showcasing my skills and projects with a sleek hacking/gaming-inspired vibe. It features responsive design, interactive sections, and smooth animations to highlight my work and journey as a developer.</p>
+                <a href="https://github.com/MoMhaidat05/Portfolio" class="project-link" target="_blank"><i class="bi bi-box-arrow-up-right"></i> Github Link</a>
+              </div>
+            </div>
+            <div class="project-card card-div d-flex flex-column justify-content-start align-items-start pb-5">
+              <img src="imgs/udbee.png" alt="Subly project display image" width="100%" class="project-img">
+              <div class="mx-4">
+                <h5 class="gradient-text fw-bold my-4">UDBee</h5>
+                <p class="specialists mb-4">UDBee is a covert reverse shell tool that leverages UDP for encrypted command-and-control communication. It features hybrid encryption (RSA + AES) and sophisticated message fragmentation to evade network detection and analysis.</p>
+                <a href="https://github.com/MoMhaidat05/UDBee" class="project-link" target="_blank"><i class="bi bi-box-arrow-up-right"></i> Github Link</a>
+              </div>
             </div>
           </div>
-          <div class="project-card card-div d-flex flex-column justify-content-start align-items-start pb-5">
-            <img src="imgs/udbee.png" alt="Subly project display image" width="100%" class="project-img">
-            <div class="mx-4">
-              <h5 class="gradient-text fw-bold my-4">UDBee</h5>
-              <p class="specialists mb-4">UDBee is a covert reverse shell tool that leverages UDP for encrypted command-and-control communication. It features hybrid encryption (RSA + AES) and sophisticated message fragmentation to evade network detection and analysis.</p>
-              <a href="https://github.com/MoMhaidat05/UDBee" class="project-link" target="_blank"><i class="bi bi-box-arrow-up-right"></i> Github Link</a>
+          <div class="container d-flex justify-content-center align-items-center flex-row">
+            <div class="project-card card-div d-flex flex-column justify-content-start align-items-start pb-5">
+              <img src="imgs/subly.png" alt="Subly project display image" width="100%" class="project-img">
+              <div class="mx-4">
+                <h5 class="gradient-text fw-bold my-4">Subly</h5>
+                <p class="specialists mb-4">Subly is a fullstack platform where subscription-based companies can fully manage their subscribers and get daily analysis about their API key usage, active and non-active subscribers, total subscribers and many more features.</p>
+                <a href="https://github.com/MoMhaidat05/ManageSubscriptions" class="project-link" target="_blank"><i class="bi bi-box-arrow-up-right"></i> Github Link</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="container d-flex justify-content-center align-items-center flex-row">
-          <div class="project-card card-div d-flex flex-column justify-content-start align-items-start pb-5">
-            <img src="imgs/subly.png" alt="Subly project display image" width="100%" class="project-img">
-            <div class="mx-4">
-              <h5 class="gradient-text fw-bold my-4">Subly</h5>
-              <p class="specialists mb-4">Subly is a fullstack platform where subscription-based companies can fully manage their subscribers and get daily analysis about their API key usage, active and non-active subscribers, total subscribers and many more features.</p>
-              <a href="https://github.com/MoMhaidat05/ManageSubscriptions" class="project-link" target="_blank"><i class="bi bi-box-arrow-up-right"></i> Github Link</a>
+        <div class="container d-flex justify-content-center align-items-center gap-3 flex-column my-5" id="contact">
+            <h2 class="gradient-text fw-bold mb-3">Lets Connect</h2>
+            <div class="container d-flex justify-content-center align-items-center gap-5 flex-row">
+              <a href="https://github.com/MoMhaidat05" target="_blank" class="contact-btn github"><i class="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/in/mohammad-al-musa-617040381" target="_blank" class="contact-btn linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="https://instagram.com/momhaidat" target="_blank" class="contact-btn instagram"><i class="bi bi-instagram"></i></a>
+              <a href="mailto:mohammadjalmusa@gmail.com" target="_blank" class="contact-btn envelope"><i class="bi bi-envelope"></i></a>
             </div>
-          </div>
         </div>
     </div>
-    <div class="container d-flex justify-content-center align-items-center gap-3 flex-column my-5" id="contact">
-        <h2 class="gradient-text fw-bold mb-3">Lets Connect</h2>
-        <div class="container d-flex justify-content-center align-items-center gap-5 flex-row">
-          <a href="https://github.com/MoMhaidat05" target="_blank" class="contact-btn github"><i class="bi bi-github"></i></a>
-          <a href="https://www.linkedin.com/in/mohammad-al-musa-617040381" target="_blank" class="contact-btn linkedin"><i class="bi bi-linkedin"></i></a>
-          <a href="https://instagram.com/momhaidat" target="_blank" class="contact-btn instagram"><i class="bi bi-instagram"></i></a>
-          <a href="mailto:mohammadjalmusa@gmail.com" target="_blank" class="contact-btn envelope"><i class="bi bi-envelope"></i></a>
-        </div>
-    </div>
-  </div>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
     <script>
       tsParticles.load("tsparticles", {
