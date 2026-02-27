@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arsenal — Mohammad AlMusa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/2b692842ad.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-background">
+    <header>
+      <nav
+        class="w-full fixed top-0 z-50 flex items-center justify-center px-4 py-3"
+      >
+        <div
+          class="w-full max-w-5xl h-14 flex items-center justify-between px-5 rounded-2xl border border-border/60 bg-surface/60 backdrop-blur-2xl shadow-lg shadow-black/20"
+        >
+          <div class="hidden md:flex items-center gap-0.5">
+            <a
+              href="index.html"
+              class="nav-link text-sm text-text-secondary tracking-wide px-3.5 py-2 hover:text-text-primary rounded-lg transition-all duration-300 relative"
+              >Home</a
+            >
+            <a
+              href="writeups.html"
+              class="nav-link text-sm text-text-secondary tracking-wide px-3.5 py-2 hover:text-text-primary rounded-lg transition-all duration-300 relative"
+              >Writeups</a
+            >
+            <a
+              href="arsenal.html"
+              class="nav-link text-sm text-text-secondary tracking-wide px-3.5 py-2 rounded-lg transition-all duration-300 relative"
+              >Arsenal</a
+            >
+            <a
+              href="achievements.html"
+              class="nav-link text-sm text-text-secondary tracking-wide px-3.5 py-2 hover:text-text-primary rounded-lg transition-all duration-300 relative"
+              >Achievements</a
+            >
+            <a
+              href="#"
+              class="nav-link text-sm text-text-secondary tracking-wide px-3.5 py-2 hover:text-text-primary rounded-lg transition-all duration-300 relative"
+              >Whoami</a
+            >
+          </div>
+          <button
+            id="menu-toggle"
+            class="md:hidden text-text-secondary hover:text-text-primary text-lg p-2 rounded-lg transition-colors duration-300"
+            aria-label="Toggle menu"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <a
+            href="contact.html"
+            class="text-sm text-text-primary tracking-wide px-5 py-2 bg-primary/10 border border-primary/30 hover:bg-primary/20 hover:border-primary/60 rounded-xl transition-all duration-300"
+            >Contact me</a
+          >
+        </div>
+      </nav>
+      <div
+        id="mobile-menu"
+        class="mobile-menu fixed top-[4.75rem] left-4 right-4 bg-surface/95 backdrop-blur-2xl border border-border/60 rounded-2xl z-40 md:hidden shadow-lg shadow-black/20"
+      >
+        <div class="flex flex-col px-3 py-3 gap-0.5">
+          <a
+            href="index.html"
+            class="text-sm text-text-secondary tracking-wide px-4 py-3 hover:text-text-primary hover:bg-background/40 rounded-xl transition-all duration-300"
+            >Home</a
+          >
+          <a
+            href="writeups.html"
+            class="text-sm text-text-secondary tracking-wide px-4 py-3 hover:text-text-primary hover:bg-background/40 rounded-xl transition-all duration-300"
+            >Writeups</a
+          >
+          <a
+            href="arsenal.html"
+            class="text-sm text-text-primary tracking-wide px-4 py-3 hover:bg-background/40 rounded-xl transition-all duration-300"
+            >Arsenal</a
+          >
+          <a
+            href="#"
+            class="text-sm text-text-secondary tracking-wide px-4 py-3 hover:text-text-primary hover:bg-background/40 rounded-xl transition-all duration-300"
+            >Achievements</a
+          >
+          <a
+            href="#"
+            class="text-sm text-text-secondary tracking-wide px-4 py-3 hover:text-text-primary hover:bg-background/40 rounded-xl transition-all duration-300"
+            >Whoami</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main class="mt-28 mb-20 px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <div class="mb-12">
+          <h1 class="text-3xl md:text-4xl font-bold text-text-primary">
+            Arsenal
+          </h1>
+          <p class="text-text-secondary mt-3 max-w-xl">
+            Tools, scripts, and proof-of-concept projects built for offensive
+            security research and automation.
+          </p>
+        </div>
+
+        <div
+          id="arsenal-grid"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+        ></div>
+
+        <div
+          id="arsenal-loading"
+          class="flex flex-col items-center justify-center py-20 gap-4"
+        >
+          <i class="fa-solid fa-spinner fa-spin text-2xl text-primary"></i>
+          <p class="text-text-muted text-sm">Loading arsenal...</p>
+        </div>
+
+        <div
+          id="arsenal-empty"
+          class="hidden flex-col items-center justify-center py-20 gap-4"
+        >
+          <i class="fa-solid fa-toolbox text-4xl text-text-muted"></i>
+          <p class="text-text-secondary text-lg">No tools yet</p>
+          <p class="text-text-muted text-sm">Check back soon.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="w-full border-t border-border py-8">
+      <div
+        class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4"
+      >
+        <p class="text-sm text-text-muted">
+          &copy; 2026 Mohammad AlMusa. All rights reserved.
+        </p>
+        <div class="flex items-center gap-5">
+          <a
+            href="https://github.com/MoMhaidat05"
+            class="text-text-muted hover:text-primary text-lg transition-colors duration-300"
+            aria-label="GitHub"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/mohammad-al-musa-971307385/"
+            class="text-text-muted hover:text-primary text-lg transition-colors duration-300"
+            aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://x.com/momhaidat"
+            class="text-text-muted hover:text-primary text-lg transition-colors duration-300"
+            aria-label="X / Twitter"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+          <a
+            href="mailto:mohammadjalmusa@gmail.com"
+            class="text-text-muted hover:text-primary text-xl transition-colors duration-300"
+            aria-label="Email"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/arsenal-index.js"></script>
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("open");
+        const icon = menuToggle.querySelector("i");
+        icon.classList.toggle("fa-bars");
+        icon.classList.toggle("fa-xmark");
+      });
+    </script>
+  </body>
+</html>

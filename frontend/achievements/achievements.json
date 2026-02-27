@@ -1,0 +1,50 @@
+[
+  {
+    "date": "2026-02-15",
+    "dateLabel": "Feb 2026",
+    "category": "Bug Bounty",
+    "title": "Critical SQLi — Financial Sector",
+    "description": "Discovered and reported a blind SQL injection vulnerability in a financial sector web application. Classified as P1/Critical severity. Bounty awarded.",
+    "url": "writeup.html?id=sqli-financial-sector"
+  },
+  {
+    "date": "2026-01-20",
+    "dateLabel": "Jan 2026",
+    "category": "Research",
+    "title": "C2-over-DNS Research Paper",
+    "description": "Conducted research on command-and-control communication over DNS tunneling. Documented evasion techniques and detection strategies.",
+    "url": ""
+  },
+  {
+    "date": "2025-11-10",
+    "dateLabel": "Nov 2025",
+    "category": "CTF",
+    "title": "Top 10 Finish — National CTF",
+    "description": "Led team to a top 10 placement in the national cybersecurity capture-the-flag competition, solving challenges across web, pwn, and crypto categories.",
+    "url": ""
+  },
+  {
+    "date": "2025-09-01",
+    "dateLabel": "Sep 2025",
+    "category": "Leadership",
+    "title": "Founded Student CTF Team — University of Jordan",
+    "description": "Established and now lead the university's first competitive CTF team, organizing weekly training sessions and internal competitions.",
+    "url": ""
+  },
+  {
+    "date": "2025-06-15",
+    "dateLabel": "Jun 2025",
+    "category": "Bug Bounty",
+    "title": "IDOR in SaaS Platform",
+    "description": "Identified an insecure direct object reference allowing unauthorized access to other tenants' data in a multi-tenant SaaS application. Responsibly disclosed and patched.",
+    "url": ""
+  },
+  {
+    "date": "2025-03-22",
+    "dateLabel": "Mar 2025",
+    "category": "Certification",
+    "title": "eJPT Certified",
+    "description": "Earned the eLearnSecurity Junior Penetration Tester certification, validating practical penetration testing methodology skills.",
+    "url": ""
+  }
+]

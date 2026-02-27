@@ -1,0 +1,34 @@
+[
+  {
+    "id": "c2-over-dns",
+    "title": "C2-over-DNS Framework",
+    "description": "A proof-of-concept command-and-control framework that tunnels encrypted communications over DNS queries to evade network-based detection.",
+    "image": "images/thm.png",
+    "link": "https://github.com/MoMhaidat05/c2-over-dns",
+    "tags": ["Python", "DNS", "Red Team", "C2"]
+  },
+  {
+    "id": "subdomain-enum",
+    "title": "SubRecon",
+    "description": "Automated subdomain enumeration and live-host detection pipeline combining multiple data sources with httpx probing.",
+    "image": "images/thm.png",
+    "link": "https://github.com/MoMhaidat05/subrecon",
+    "tags": ["Bash", "Recon", "Bug Bounty"]
+  },
+  {
+    "id": "jwt-cracker",
+    "title": "JWT Secret Brute-Forcer",
+    "description": "A high-performance JWT HS256 secret key brute-forcer built for CTF challenges and weak-secret auditing.",
+    "image": "images/thm.png",
+    "link": "https://github.com/MoMhaidat05/jwt-cracker",
+    "tags": ["Go", "JWT", "Cryptography"]
+  },
+  {
+    "id": "xss-payload-gen",
+    "title": "XSS Payload Generator",
+    "description": "Context-aware cross-site scripting payload generator with WAF bypass techniques and encoding support.",
+    "image": "images/thm.png",
+    "link": "https://github.com/MoMhaidat05/xss-payload-gen",
+    "tags": ["JavaScript", "XSS", "Web Security"]
+  }
+]
