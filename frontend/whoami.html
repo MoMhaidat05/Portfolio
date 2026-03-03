@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whoami — Mohammad AlMusa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/2b692842ad.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-background">
+    <header>
+      <nav
+        class="w-full fixed top-0 z-50 flex items-center justify-center px-4 py-3"
+      >
+        <div
+          class="w-full max-w-5xl h-14 flex items-center justify-between px-5 rounded-2xl border border-border/60 bg-surface/60 backdrop-blur-2xl shadow-lg shadow-black/20"
+        >
+          <div class="hidden md:flex items-center gap-0.5">
+            <a
+              href="index.html"
+              class="nav-link text-sm text-text-secondary tracking-wide px-3.5 py-2 hover:text-text-primary rounded-lg transition-all duration-300 relative"
+              >Home</a
+            >
+            <a
+              href="writeups.html"
+              class="nav-link text-sm text-text-secondary tracking-wide px-3.5 py-2 hover:text-text-primary rounded-lg transition-all duration-300 relative"
+              >Writeups</a
+            >
+            <a
+              href="arsenal.html"
+              class="nav-link text-sm text-text-secondary tracking-wide px-3.5 py-2 hover:text-text-primary rounded-lg transition-all duration-300 relative"
+              >Arsenal</a
+            >
+            <a
+              href="achievements.html"
+              class="nav-link text-sm text-text-secondary tracking-wide px-3.5 py-2 hover:text-text-primary rounded-lg transition-all duration-300 relative"
+              >Achievements</a
+            >
+            <a
+              href="whoami.html"
+              class="nav-link text-sm text-text-primary tracking-wide px-3.5 py-2 rounded-lg transition-all duration-300 relative"
+              >Whoami</a
+            >
+          </div>
+          <button
+            id="menu-toggle"
+            class="md:hidden text-text-secondary hover:text-text-primary text-lg p-2 rounded-lg transition-colors duration-300"
+            aria-label="Toggle menu"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <a
+            href="contact.html"
+            class="text-sm text-text-primary tracking-wide px-5 py-2 bg-primary/10 border border-primary/30 hover:bg-primary/20 hover:border-primary/60 rounded-xl transition-all duration-300"
+            >Contact me</a
+          >
+        </div>
+      </nav>
+      <div
+        id="mobile-menu"
+        class="mobile-menu fixed top-[4.75rem] left-4 right-4 bg-surface/95 backdrop-blur-2xl border border-border/60 rounded-2xl z-40 md:hidden shadow-lg shadow-black/20"
+      >
+        <div class="flex flex-col px-3 py-3 gap-0.5">
+          <a
+            href="index.html"
+            class="text-sm text-text-secondary tracking-wide px-4 py-3 hover:text-text-primary hover:bg-background/40 rounded-xl transition-all duration-300"
+            >Home</a
+          >
+          <a
+            href="writeups.html"
+            class="text-sm text-text-secondary tracking-wide px-4 py-3 hover:text-text-primary hover:bg-background/40 rounded-xl transition-all duration-300"
+            >Writeups</a
+          >
+          <a
+            href="arsenal.html"
+            class="text-sm text-text-secondary tracking-wide px-4 py-3 hover:text-text-primary hover:bg-background/40 rounded-xl transition-all duration-300"
+            >Arsenal</a
+          >
+          <a
+            href="achievements.html"
+            class="text-sm text-text-secondary tracking-wide px-4 py-3 hover:text-text-primary hover:bg-background/40 rounded-xl transition-all duration-300"
+            >Achievements</a
+          >
+          <a
+            href="whoami.html"
+            class="text-sm text-text-primary tracking-wide px-4 py-3 hover:bg-background/40 rounded-xl transition-all duration-300"
+            >Whoami</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main class="mt-20">
+      <!-- Hero Section -->
+      <section class="relative w-full min-h-[50vh] flex items-center overflow-hidden">
+        <div class="glow-orb absolute rounded-full blur-[100px] pointer-events-none w-72 h-72 md:w-96 md:h-96 bg-primary/20 top-10 -left-20"></div>
+        <div class="glow-orb absolute rounded-full blur-[100px] pointer-events-none w-60 h-60 md:w-80 md:h-80 bg-secondary/15 bottom-10 right-0"></div>
+
+        <div class="relative z-10 w-full max-w-4xl mx-auto px-6 lg:px-8 py-16 md:py-24">
+          <p class="text-sm text-primary secondary-font tracking-wider mb-4">
+            <i class="fa-solid fa-terminal mr-2"></i>~/whoami
+          </p>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary leading-tight tracking-tight">
+            Mohammad <span class="text-primary">AlMusa</span>
+          </h1>
+          <p class="text-lg md:text-xl text-text-secondary mt-5 max-w-2xl leading-relaxed">
+            Security researcher. Builder. Relentlessly curious. I operate at the intersection of offensive security research and software engineering — breaking systems to understand how they work, then documenting it for others.
+          </p>
+          <div class="flex flex-wrap items-center gap-3 mt-8">
+            <span class="inline-flex items-center gap-2 text-xs secondary-font tracking-wider text-secondary bg-secondary/10 border border-secondary/30 px-3 py-1.5 rounded-lg">
+              <i class="fa-solid fa-shield-halved"></i> Offensive Security
+            </span>
+            <span class="inline-flex items-center gap-2 text-xs secondary-font tracking-wider text-primary bg-primary/10 border border-primary/30 px-3 py-1.5 rounded-lg">
+              <i class="fa-solid fa-bug"></i> Bug Bounty
+            </span>
+            <span class="inline-flex items-center gap-2 text-xs secondary-font tracking-wider text-purple-400 bg-purple-400/10 border border-purple-400/30 px-3 py-1.5 rounded-lg">
+              <i class="fa-solid fa-microscope"></i> Exploit Dev
+            </span>
+            <span class="inline-flex items-center gap-2 text-xs secondary-font tracking-wider text-orange-300 bg-orange-300/10 border border-orange-300/30 px-3 py-1.5 rounded-lg">
+              <i class="fa-solid fa-code"></i> Web Dev
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Bar -->
+      <section class="w-full border-y border-border/60 bg-surface/40 backdrop-blur-xl">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="text-center">
+            <p class="text-2xl font-bold text-primary secondary-font">3.96</p>
+            <p class="text-xs text-text-muted mt-1 tracking-wide">GPA / 4.0</p>
+          </div>
+          <div class="text-center">
+            <p class="text-2xl font-bold text-secondary secondary-font">20</p>
+            <p class="text-xs text-text-muted mt-1 tracking-wide">Years Old</p>
+          </div>
+          <div class="text-center">
+            <p class="text-2xl font-bold text-primary secondary-font">2+</p>
+            <p class="text-xs text-text-muted mt-1 tracking-wide">Years Hunting</p>
+          </div>
+          <div class="text-center">
+            <p class="text-2xl font-bold text-secondary secondary-font">$</p>
+            <p class="text-xs text-text-muted mt-1 tracking-wide">Bounties Earned</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="w-full py-20 px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-10 items-start">
+
+            <!-- Left: Quick Profile Terminal -->
+            <div class="order-2 md:order-1 bg-surface border border-border rounded-xl overflow-hidden shadow-2xl md:sticky md:top-28">
+              <div class="flex items-center gap-2 px-4 py-2.5 border-b border-border">
+                <span class="w-2.5 h-2.5 rounded-full" style="background: #ff5f57"></span>
+                <span class="w-2.5 h-2.5 rounded-full" style="background: #ffbd2e"></span>
+                <span class="w-2.5 h-2.5 rounded-full" style="background: #28c840"></span>
+                <span class="text-xs text-text-muted ml-2 secondary-font tracking-wider">profile</span>
+              </div>
+              <div class="secondary-font text-xs leading-relaxed text-text-secondary px-5 py-4 space-y-0.5">
+                <div><span class="text-secondary">$</span> <span class="text-text-primary">cat profile.yml</span></div>
+                <br />
+                <div><span class="text-primary">name</span><span class="text-text-muted">:</span> Mohammad</div>
+                <div><span class="text-primary">age</span><span class="text-text-muted">:</span> 20</div>
+                <div><span class="text-primary">uni</span><span class="text-text-muted">:</span> UJ — Aqaba</div>
+                <div><span class="text-primary">year</span><span class="text-text-muted">:</span> 2nd (Cybersec)</div>
+                <div><span class="text-primary">gpa</span><span class="text-text-muted">:</span> 3.96/4</div>
+                <div><span class="text-primary">os</span><span class="text-text-muted">:</span> Parrot OS</div>
+                <br />
+                <div><span class="text-secondary">$</span> <span class="terminal-cursor inline-block w-[0.5em] h-[1em] bg-secondary align-text-bottom"></span></div>
+              </div>
+            </div>
+
+            <!-- Right: Content Sections -->
+            <div class="order-1 md:order-2 space-y-12">
+
+              <!-- Offensive Security -->
+              <div>
+                <div class="flex items-center gap-3 mb-6">
+                  <div class="w-10 h-10 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center shrink-0">
+                    <i class="fa-solid fa-crosshairs text-primary text-sm"></i>
+                  </div>
+                  <div>
+                    <h2 class="text-lg font-bold text-text-primary">Offensive Security & Research</h2>
+                    <p class="text-xs text-text-muted mt-0.5">Exploit development, reverse engineering, bounties</p>
+                  </div>
+                </div>
+                <p class="text-sm text-text-secondary leading-relaxed mb-5">
+                  My core focus areas are <span class="text-text-primary font-medium">offensive security</span>, <span class="text-text-primary font-medium">reverse engineering</span>, <span class="text-text-primary font-medium">exploit development</span>, and <span class="text-text-primary font-medium">Bug Bounty hunting</span>. I treat every target as a puzzle — methodical enumeration, patient analysis, precise exploitation.
+                </p>
+                <div class="space-y-3">
+                  <div class="flex items-start gap-3 bg-surface/80 border border-border/60 rounded-lg px-4 py-3 hover:border-primary/40 transition-colors duration-300">
+                    <div class="w-1.5 h-1.5 rounded-full bg-red-400 mt-2 shrink-0"></div>
+                    <div>
+                      <p class="text-sm text-text-primary font-medium">Critical SQL Injection — Banking System</p>
+                      <p class="text-xs text-text-muted mt-0.5">Discovered, reported & rewarded financially &middot; Dec 2024</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-3 bg-surface/80 border border-border/60 rounded-lg px-4 py-3 hover:border-primary/40 transition-colors duration-300">
+                    <div class="w-1.5 h-1.5 rounded-full bg-orange-300 mt-2 shrink-0"></div>
+                    <div>
+                      <p class="text-sm text-text-primary font-medium">Multiple Vulnerability Reports</p>
+                      <p class="text-xs text-text-muted mt-0.5">Reported to multiple international parties &middot; Jan 2024 – Jan 2026</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-3 bg-surface/80 border border-border/60 rounded-lg px-4 py-3 hover:border-primary/40 transition-colors duration-300">
+                    <div class="w-1.5 h-1.5 rounded-full bg-yellow-300 mt-2 shrink-0"></div>
+                    <div>
+                      <p class="text-sm text-text-primary font-medium">WebSocket Hijacking PoC</p>
+                      <p class="text-xs text-text-muted mt-0.5">Currently developing proof of concept for reported vulnerability</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-3 bg-surface/80 border border-border/60 rounded-lg px-4 py-3 hover:border-secondary/40 transition-colors duration-300">
+                    <div class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></div>
+                    <div>
+                      <p class="text-sm text-text-primary font-medium">University CTF Team — Founder & Former Lead</p>
+                      <p class="text-xs text-text-muted mt-0.5">University of Jordan</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Divider -->
+              <div class="w-full h-px bg-border/60"></div>
+
+              <!-- Research -->
+              <div>
+                <div class="flex items-center gap-3 mb-6">
+                  <div class="w-10 h-10 rounded-lg bg-secondary/10 border border-secondary/30 flex items-center justify-center shrink-0">
+                    <i class="fa-solid fa-flask text-secondary text-sm"></i>
+                  </div>
+                  <div>
+                    <h2 class="text-lg font-bold text-text-primary">Current Research</h2>
+                    <p class="text-xs text-text-muted mt-0.5">IEEE-targeted paper in progress</p>
+                  </div>
+                </div>
+                <div class="bg-surface border border-border rounded-xl p-5">
+                  <div class="flex items-center gap-2 mb-3">
+                    <span class="text-xs secondary-font text-primary bg-primary/10 border border-primary/30 px-2.5 py-1 rounded-md">IEEE</span>
+                    <span class="text-xs secondary-font text-secondary bg-secondary/10 border border-secondary/30 px-2.5 py-1 rounded-md">C2-over-DNS</span>
+                    <span class="text-xs secondary-font text-purple-400 bg-purple-400/10 border border-purple-400/30 px-2.5 py-1 rounded-md">Steganography</span>
+                  </div>
+                  <p class="text-sm text-text-secondary leading-relaxed">
+                    Writing a research paper targeting an <span class="text-text-primary font-medium">IEEE conference</span>. The project involves developing a <span class="text-text-primary font-medium">C2-over-DNS</span> tool that leverages a novel steganography algorithm to evade detection by Next-Generation Firewalls (NGFWs) and AI-based network detectors — demonstrating how covert channels bypass the most advanced defensive layers.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Divider -->
+              <div class="w-full h-px bg-border/60"></div>
+
+              <!-- Development & Freelance -->
+              <div>
+                <div class="flex items-center gap-3 mb-6">
+                  <div class="w-10 h-10 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center shrink-0">
+                    <i class="fa-solid fa-code text-primary text-sm"></i>
+                  </div>
+                  <div>
+                    <h2 class="text-lg font-bold text-text-primary">Development & Freelance</h2>
+                    <p class="text-xs text-text-muted mt-0.5">Athar, side projects, and continuous learning</p>
+                  </div>
+                </div>
+                <p class="text-sm text-text-secondary leading-relaxed mb-5">
+                  Security expertise means little without the ability to build. I run <span class="text-text-primary font-medium">Athar</span> — a freelance business offering web development services — and I'm continuously expanding my engineering toolkit.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div class="bg-surface border border-border/60 rounded-lg p-4 hover:border-primary/40 transition-colors duration-300">
+                    <div class="flex items-center gap-2 mb-2">
+                      <i class="fa-solid fa-globe text-primary text-xs"></i>
+                      <p class="text-sm text-text-primary font-medium">Kava — Café Website</p>
+                    </div>
+                    <p class="text-xs text-text-muted">First paid freelance delivery &middot; Jan 2026</p>
+                  </div>
+                  <div class="bg-surface border border-border/60 rounded-lg p-4 hover:border-primary/40 transition-colors duration-300">
+                    <div class="flex items-center gap-2 mb-2">
+                      <i class="fa-brands fa-react text-sky-400 text-xs"></i>
+                      <p class="text-sm text-text-primary font-medium">Learning React.js</p>
+                    </div>
+                    <p class="text-xs text-text-muted">Expanding frontend capabilities</p>
+                  </div>
+                  <div class="bg-surface border border-border/60 rounded-lg p-4 hover:border-secondary/40 transition-colors duration-300">
+                    <div class="flex items-center gap-2 mb-2">
+                      <i class="fa-solid fa-credit-card text-secondary text-xs"></i>
+                      <p class="text-sm text-text-primary font-medium">Subly</p>
+                    </div>
+                    <p class="text-xs text-text-muted">Subscription management system</p>
+                  </div>
+                  <div class="bg-surface border border-border/60 rounded-lg p-4 hover:border-secondary/40 transition-colors duration-300">
+                    <div class="flex items-center gap-2 mb-2">
+                      <i class="fa-solid fa-rocket text-orange-300 text-xs"></i>
+                      <p class="text-sm text-text-primary font-medium">Loqta</p>
+                    </div>
+                    <p class="text-xs text-text-muted">Startup project — in development</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Career Vision -->
+      <section class="relative w-full py-20 px-6 lg:px-8 overflow-hidden">
+        <div class="glow-orb absolute rounded-full blur-[100px] pointer-events-none w-60 h-60 bg-primary/10 -bottom-10 left-1/4"></div>
+        <div class="max-w-3xl mx-auto text-center relative z-10">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center mx-auto mb-6">
+            <i class="fa-solid fa-bullseye text-primary text-lg"></i>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-bold text-text-primary mb-6">Where I'm Headed</h2>
+          <p class="text-base text-text-secondary leading-relaxed max-w-2xl mx-auto">
+            My long-term ambition is to become a recognized scientific researcher in cybersecurity and deliver a groundbreaking contribution to the field — a quantum leap that redefines what's possible. Every vulnerability I find, every tool I build, and every paper I write is a step toward that goal. I don't do this for credentials. I do it because the work itself demands to be done.
+          </p>
+        </div>
+      </section>
+
+    <footer class="w-full border-t border-border py-8">
+      <div
+        class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4"
+      >
+        <p class="text-sm text-text-muted">
+          &copy; 2026 Mohammad Al Musa. All rights reserved.
+        </p>
+        <div class="flex items-center gap-5">
+          <a
+            href="https://github.com/MoMhaidat05"
+            class="text-text-muted hover:text-primary text-lg transition-colors duration-300"
+            aria-label="GitHub"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/mohammad-al-musa-971307385/"
+            class="text-text-muted hover:text-primary text-lg transition-colors duration-300"
+            aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://x.com/momhaidat"
+            class="text-text-muted hover:text-primary text-lg transition-colors duration-300"
+            aria-label="X / Twitter"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+          <a
+            href="mailto:mohammadjalmusa@gmail.com"
+            class="text-text-muted hover:text-primary text-xl transition-colors duration-300"
+            aria-label="Email"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("open");
+        const icon = menuToggle.querySelector("i");
+        icon.classList.toggle("fa-bars");
+        icon.classList.toggle("fa-xmark");
+      });
+    </script>
+  </body>
+</html>

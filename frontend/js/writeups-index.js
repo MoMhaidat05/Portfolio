@@ -12,6 +12,12 @@
     "bg-rose-300/20 border-rose-300/50 text-rose-300",
   ];
 
+  const LEVEL_STYLES = {
+    easy: "bg-green-500/20 border-green-500/50 text-green-400",
+    medium: "bg-yellow-500/20 border-yellow-500/50 text-yellow-400",
+    hard: "bg-red-500/20 border-red-500/50 text-red-400",
+  };
+
   function buildCard(w) {
     var tags = w.tags
       .map(function (tag, i) {
@@ -25,14 +31,25 @@
       })
       .join("");
 
+    var levelBadge = "";
+    if (w.level && LEVEL_STYLES[w.level]) {
+      levelBadge =
+        '<span class="absolute top-2 right-2 text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-md border backdrop-blur-sm z-10 ' +
+        LEVEL_STYLES[w.level] +
+        '">' +
+        w.level +
+        "</span>";
+    }
+
     return (
       '<a href="writeup.html?id=' +
       w.id +
-      '" class="group flex flex-col bg-surface border border-border rounded-xl overflow-hidden hover:border-primary/60 hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(8,148,227,0.08)] transition-all duration-300">' +
+      '" class="group relative flex flex-col bg-surface border border-border rounded-xl overflow-hidden hover:border-primary/60 hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(8,148,227,0.08)] transition-all duration-300">' +
+      levelBadge +
       (w.image
-        ? '<div class="w-full h-44 overflow-hidden"><img src="' +
+        ? '<div class="w-full h-36 overflow-hidden bg-background"><img src="' +
           w.image +
-          '" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" /></div>'
+          '" alt="" class="w-full h-full object-contain object-center group-hover:scale-105 transition-transform duration-500" /></div>'
         : "") +
       '<div class="flex flex-col gap-3 p-5 flex-1">' +
       '<h3 class="text-text-primary text-base font-semibold leading-snug group-hover:text-primary transition-colors duration-300">' +

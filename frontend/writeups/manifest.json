@@ -1,11 +1,12 @@
 [
   {
-    "id": "sqli-financial-sector",
-    "title": "Critical SQLi in Financial Sector Application",
-    "description": "Discovering and exploiting a blind SQL injection vulnerability in a financial sector web application that led to full database extraction.",
-    "date": "2026-02-15",
-    "tags": ["SQLi", "Bug Bounty", "Financial"],
-    "image": "images/thm.png",
-    "file": "writeups/posts/sqli-financial-sector.md"
+    "id": "pie-time",
+    "title": "picoCTF 2025 PIE TIME CTF challenge",
+    "description": "Walkthrough of PIE TIME binary exploitation challenge, discovering ret2win vulnerability and exploiting it to retrive the flag.",
+    "date": "2026-03-02",
+    "tags": ["PWN", "Ret2win", "picoCTF"],
+    "image": "images/picoctf.svg",
+    "file": "writeups/posts/pie-time.md",
+    "level": "easy"
   }
 ]

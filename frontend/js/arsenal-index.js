@@ -30,9 +30,9 @@
       item.link +
       '" target="_blank" rel="noopener noreferrer" class="group flex flex-col bg-surface border border-border rounded-xl overflow-hidden hover:border-primary/60 hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(8,148,227,0.08)] transition-all duration-300">' +
       (item.image
-        ? '<div class="w-full h-44 overflow-hidden"><img src="' +
+        ? '<div class="w-full h-36 overflow-hidden bg-background"><img src="' +
           item.image +
-          '" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" /></div>'
+          '" alt="" class="w-full h-full object-contain object-center group-hover:scale-105 transition-transform duration-500" /></div>'
         : "") +
       '<div class="flex flex-col gap-3 p-5 flex-1">' +
       '<h3 class="text-text-primary text-base font-semibold leading-snug group-hover:text-primary transition-colors duration-300">' +
