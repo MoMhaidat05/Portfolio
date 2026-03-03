@@ -3,14 +3,7 @@
   var loading = document.getElementById("arsenal-loading");
   var empty = document.getElementById("arsenal-empty");
 
-  var TAG_COLORS = [
-    "bg-yellow-300/20 border-yellow-300/50 text-yellow-300",
-    "bg-orange-300/20 border-orange-300/50 text-orange-300",
-    "bg-teal-300/20 border-teal-300/50 text-teal-300",
-    "bg-sky-300/20 border-sky-300/50 text-sky-300",
-    "bg-purple-300/20 border-purple-300/50 text-purple-300",
-    "bg-rose-300/20 border-rose-300/50 text-rose-300",
-  ];
+  var TAG_COLORS = ["bg-primary/15 border-primary/40 text-primary"];
 
   function buildCard(item) {
     var tags = item.tags
@@ -28,7 +21,7 @@
     return (
       '<a href="' +
       item.link +
-      '" target="_blank" rel="noopener noreferrer" class="group flex flex-col bg-surface border border-border rounded-xl overflow-hidden hover:border-primary/60 hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(8,148,227,0.08)] transition-all duration-300">' +
+      '" target="_blank" rel="noopener noreferrer" class="group flex flex-col bg-surface border border-border rounded-xl overflow-hidden hover:border-primary/60 hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(164,240,0,0.06)] transition-all duration-300">' +
       (item.image
         ? '<div class="w-full h-36 overflow-hidden bg-background"><img src="' +
           item.image +

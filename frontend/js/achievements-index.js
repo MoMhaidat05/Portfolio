@@ -4,27 +4,27 @@
   var empty = document.getElementById("achievements-empty");
 
   var CATEGORY_STYLES = {
-    "Bug Bounty": "text-red-400 border-red-400/50 bg-red-400/15",
-    Research: "text-sky-400 border-sky-400/50 bg-sky-400/15",
-    CTF: "text-yellow-300 border-yellow-300/50 bg-yellow-300/15",
-    Leadership: "text-purple-400 border-purple-400/50 bg-purple-400/15",
-    Certification: "text-green-400 border-green-400/50 bg-green-400/15",
+    "Bug Bounty": "text-primary border-primary/50 bg-primary/15",
+    Research: "text-primary border-primary/50 bg-primary/15",
+    CTF: "text-primary border-primary/50 bg-primary/15",
+    Leadership: "text-primary border-primary/50 bg-primary/15",
+    Certification: "text-primary border-primary/50 bg-primary/15",
   };
 
   var DOT_COLORS = {
-    "Bug Bounty": "bg-red-400 shadow-[0_0_8px_rgba(248,113,113,0.5)]",
-    Research: "bg-sky-400 shadow-[0_0_8px_rgba(56,189,248,0.5)]",
-    CTF: "bg-yellow-300 shadow-[0_0_8px_rgba(253,224,71,0.5)]",
-    Leadership: "bg-purple-400 shadow-[0_0_8px_rgba(192,132,252,0.5)]",
-    Certification: "bg-green-400 shadow-[0_0_8px_rgba(74,222,128,0.5)]",
+    "Bug Bounty": "bg-primary shadow-[0_0_8px_rgba(164,240,0,0.5)]",
+    Research: "bg-primary shadow-[0_0_8px_rgba(164,240,0,0.5)]",
+    CTF: "bg-primary shadow-[0_0_8px_rgba(164,240,0,0.5)]",
+    Leadership: "bg-primary shadow-[0_0_8px_rgba(164,240,0,0.5)]",
+    Certification: "bg-primary shadow-[0_0_8px_rgba(164,240,0,0.5)]",
   };
 
   function fallbackStyle() {
-    return "text-teal-300 border-teal-300/50 bg-teal-300/15";
+    return "text-primary border-primary/50 bg-primary/15";
   }
 
   function fallbackDot() {
-    return "bg-teal-300 shadow-[0_0_8px_rgba(94,234,212,0.5)]";
+    return "bg-primary shadow-[0_0_8px_rgba(164,240,0,0.5)]";
   }
 
   function buildEntry(item) {

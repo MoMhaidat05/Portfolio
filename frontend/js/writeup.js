@@ -49,14 +49,7 @@
       '<span><i class="fa-solid fa-user mr-1.5"></i>Mohammad AlMusa</span>',
     ].join("");
 
-    const tagColors = [
-      "bg-yellow-300/20 border-yellow-300/50 text-yellow-300",
-      "bg-orange-300/20 border-orange-300/50 text-orange-300",
-      "bg-teal-300/20 border-teal-300/50 text-teal-300",
-      "bg-sky-300/20 border-sky-300/50 text-sky-300",
-      "bg-purple-300/20 border-purple-300/50 text-purple-300",
-      "bg-rose-300/20 border-rose-300/50 text-rose-300",
-    ];
+    const tagColors = ["bg-primary/20 border-primary/50 text-primary"];
 
     elTags.innerHTML = meta.tags
       .map(

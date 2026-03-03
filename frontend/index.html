@@ -143,7 +143,7 @@
             >
               <a
                 href="arsenal.html"
-                class="text-base w-fit text-text-primary bg-primary px-7 py-2.5 hover:bg-primary/85 rounded-lg transition-all duration-300 font-medium"
+                class="text-base w-fit text-background bg-primary px-7 py-2.5 hover:bg-primary/85 rounded-lg transition-all duration-300 font-medium"
               >
                 <i class="fa-solid fa-toolbox mr-2"></i>My Arsenal
               </a>
@@ -246,78 +246,146 @@
         </div>
       </section>
 
-      <section
-        id="writeups-section"
-        class="relative w-full min-h-[calc(100vh-5rem)] flex items-center flex-col overflow-hidden py-12"
-      >
-        <h2 class="text-primary text-3xl secondary-font mb-6">
-          Featured Writeups
-        </h2>
-        <div
-          id="featured-writeups-grid"
-          class="w-full grid grid-cols-3 py-4 gap-4 px-8 md:px-12 lg:px-20"
-        ></div>
-        <a
-          href="writeups.html"
-          class="nav-link text-md mt-5 text-text-secondary tracking-wide px-3.5 py-2 hover:text-text-primary rounded-lg transition-all duration-300 relative"
-        >
-          View more writeups <i class="fa-solid fa-arrow-right-long"></i>
-        </a>
+      <section id="writeups-section" class="relative w-full py-20 px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto">
+          <div
+            class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10"
+          >
+            <div>
+              <h2 class="text-2xl md:text-3xl font-bold text-text-primary">
+                Featured Writeups
+              </h2>
+              <p class="text-text-secondary text-sm mt-2 max-w-md">
+                Recent security research, CTF solutions, and vulnerability
+                disclosures.
+              </p>
+            </div>
+            <a
+              href="writeups.html"
+              class="text-sm text-primary hover:text-primary/80 font-medium transition-colors duration-300 shrink-0"
+            >
+              View all writeups <i class="fa-solid fa-arrow-right ml-1.5"></i>
+            </a>
+          </div>
+          <div
+            id="featured-writeups-grid"
+            class="grid grid-cols-1 md:grid-cols-3 gap-5"
+          ></div>
+        </div>
       </section>
 
       <section
-        id="hightlights"
-        class="relative w-full flex flex-col items-center overflow-hidden py-20 px-6 lg:px-8"
+        id="highlights"
+        class="relative w-full py-20 px-6 lg:px-8 border-t border-border/40"
       >
-        <h2 class="text-primary text-3xl secondary-font mb-14">Highlights</h2>
-        <div class="relative w-full max-w-xl">
-          <div class="absolute left-[7px] top-0 bottom-0 w-px bg-border"></div>
-
-          <div class="flex flex-col gap-10">
-            <div class="relative pl-10">
-              <div
-                class="absolute left-0 top-1.5 w-[15px] h-[15px] rounded-full bg-primary shadow-[0_0_8px_rgba(8,148,227,0.5)]"
-              ></div>
-              <span class="text-xs text-primary secondary-font tracking-wider"
-                >Jan 2026</span
-              >
-              <h3 class="text-text-primary text-base font-semibold mt-1">
-                Research Paper — C2-over-DNS
-              </h3>
-              <p class="text-text-secondary text-sm mt-1 leading-relaxed">
-                Conducted research on command-and-control communication over DNS
-                tunneling
+        <div class="max-w-5xl mx-auto">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-[1fr_1.8fr] gap-12 items-start"
+          >
+            <div class="lg:sticky lg:top-28">
+              <h2 class="text-2xl md:text-3xl font-bold text-text-primary">
+                Highlights
+              </h2>
+              <p class="text-text-secondary text-sm mt-2 leading-relaxed">
+                Key milestones, contributions, and achievements across my
+                security research journey.
               </p>
+              <a
+                href="achievements.html"
+                class="inline-flex items-center gap-2 text-sm text-primary hover:text-primary/80 font-medium mt-5 transition-colors duration-300"
+              >
+                <i class="fa-solid fa-trophy text-xs"></i> All achievements
+              </a>
             </div>
 
-            <div class="relative pl-10">
+            <div class="relative">
               <div
-                class="absolute left-0 top-1.5 w-[15px] h-[15px] rounded-full bg-secondary shadow-[0_0_8px_rgba(0,206,201,0.5)]"
+                class="absolute left-[7px] top-0 bottom-0 w-px bg-border"
               ></div>
-              <span class="text-xs text-secondary secondary-font tracking-wider"
-                >Sep 2025</span
-              >
-              <h3 class="text-text-primary text-base font-semibold mt-1">
-                Founder & Lead — Student CTF Team
-              </h3>
-              <p class="text-text-secondary text-sm mt-1 leading-relaxed">
-                University of Jordan
-              </p>
-            </div>
+              <div class="flex flex-col gap-8">
+                <div class="relative pl-10">
+                  <div
+                    class="absolute left-0 top-1.5 w-[15px] h-[15px] rounded-full bg-primary shadow-[0_0_8px_rgba(164,240,0,0.5)]"
+                  ></div>
+                  <div class="bg-surface border border-border rounded-xl p-5">
+                    <div class="flex flex-wrap items-center gap-3 mb-2">
+                      <span
+                        class="text-xs text-primary secondary-font tracking-wider"
+                        >Jan 2026</span
+                      >
+                      <span
+                        class="text-xs px-2 py-0.5 rounded-lg border secondary-font bg-primary/15 border-primary/50 text-primary"
+                        >Research</span
+                      >
+                    </div>
+                    <h3 class="text-text-primary text-base font-semibold">
+                      Research Paper — C2-over-DNS
+                    </h3>
+                    <p
+                      class="text-text-secondary text-sm mt-1.5 leading-relaxed"
+                    >
+                      Conducted research on command-and-control communication
+                      over DNS tunneling. Documented evasion techniques and
+                      detection strategies.
+                    </p>
+                  </div>
+                </div>
 
-            <div class="relative pl-10">
-              <div
-                class="absolute left-0 top-1.5 w-[15px] h-[15px] rounded-full bg-primary shadow-[0_0_8px_rgba(8,148,227,0.5)]"
-              ></div>
-              <span class="text-xs text-primary secondary-font tracking-wider"
-                >Dec 2024</span
-              >
-              <h3 class="text-text-primary text-base font-semibold mt-1">
-                Critical Vulnerability (SQLi)
-              </h3>
-              <p class="text-text-secondary text-sm mt-1 leading-relaxed">
-                Financial Sector — Bounty Awarded
-              </p>
+                <div class="relative pl-10">
+                  <div
+                    class="absolute left-0 top-1.5 w-[15px] h-[15px] rounded-full bg-primary shadow-[0_0_8px_rgba(164,240,0,0.5)]"
+                  ></div>
+                  <div class="bg-surface border border-border rounded-xl p-5">
+                    <div class="flex flex-wrap items-center gap-3 mb-2">
+                      <span
+                        class="text-xs text-primary secondary-font tracking-wider"
+                        >Sep 2025</span
+                      >
+                      <span
+                        class="text-xs px-2 py-0.5 rounded-lg border secondary-font bg-primary/15 border-primary/50 text-primary"
+                        >Leadership</span
+                      >
+                    </div>
+                    <h3 class="text-text-primary text-base font-semibold">
+                      Founder & Lead — Student CTF Team
+                    </h3>
+                    <p
+                      class="text-text-secondary text-sm mt-1.5 leading-relaxed"
+                    >
+                      Established and now lead the University of Jordan's first
+                      competitive CTF team, organizing weekly training sessions.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="relative pl-10">
+                  <div
+                    class="absolute left-0 top-1.5 w-[15px] h-[15px] rounded-full bg-primary shadow-[0_0_8px_rgba(164,240,0,0.5)]"
+                  ></div>
+                  <div class="bg-surface border border-border rounded-xl p-5">
+                    <div class="flex flex-wrap items-center gap-3 mb-2">
+                      <span
+                        class="text-xs text-primary secondary-font tracking-wider"
+                        >Dec 2024</span
+                      >
+                      <span
+                        class="text-xs px-2 py-0.5 rounded-lg border secondary-font bg-primary/15 border-primary/50 text-primary"
+                        >Bug Bounty</span
+                      >
+                    </div>
+                    <h3 class="text-text-primary text-base font-semibold">
+                      Critical Vulnerability (SQLi)
+                    </h3>
+                    <p
+                      class="text-text-secondary text-sm mt-1.5 leading-relaxed"
+                    >
+                      Discovered and reported a blind SQL injection in a
+                      financial sector web application. P1/Critical severity.
+                      Bounty awarded.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -390,19 +458,12 @@
 
       // Featured writeups loader
       (async function () {
-        const TAG_COLORS = [
-          "bg-yellow-300/20 border-yellow-300/50 text-yellow-300",
-          "bg-orange-300/20 border-orange-300/50 text-orange-300",
-          "bg-teal-300/20 border-teal-300/50 text-teal-300",
-          "bg-sky-300/20 border-sky-300/50 text-sky-300",
-          "bg-purple-300/20 border-purple-300/50 text-purple-300",
-          "bg-rose-300/20 border-rose-300/50 text-rose-300",
-        ];
+        const TAG_COLORS = ["bg-primary/15 border-primary/40 text-primary"];
 
         const LEVEL_STYLES = {
-          easy: "bg-green-500/20 border-green-500/50 text-green-400",
-          medium: "bg-yellow-500/20 border-yellow-500/50 text-yellow-400",
-          hard: "bg-red-500/20 border-red-500/50 text-red-400",
+          easy: "bg-primary/20 border-primary/50 text-primary",
+          medium: "bg-amber-400/20 border-amber-400/50 text-amber-400",
+          hard: "bg-red-400/20 border-red-400/50 text-red-400",
         };
 
         function buildCard(w) {
@@ -431,7 +492,7 @@
           return (
             '<a href="writeup.html?id=' +
             w.id +
-            '" class="group relative flex flex-col bg-surface border border-border rounded-xl overflow-hidden hover:border-primary/60 hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(8,148,227,0.08)] transition-all duration-300">' +
+            '" class="group relative flex flex-col bg-surface border border-border rounded-xl overflow-hidden hover:border-primary/60 hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(164,240,0,0.06)] transition-all duration-300">' +
             levelBadge +
             (w.image
               ? '<div class="w-full h-36 overflow-hidden bg-background"><img src="' +
