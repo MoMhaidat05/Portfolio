@@ -8,5 +8,15 @@
     "image": "images/picoctf.svg",
     "file": "writeups/posts/pie-time.md",
     "level": "easy"
+  },
+  {
+    "id": "pie-time-2",
+    "title": "picoCTF 2025 PIE TIME 2 CTF challenge",
+    "description": "Walkthrough of PIE TIME 2 binary exploitation challenge, discovering format string & ret2win vulnerabilities and exploiting them to retrive the flag.",
+    "date": "2026-03-04",
+    "tags": ["PWN", "Format String", "Ret2win", "picoCTF"],
+    "image": "images/picoctf.svg",
+    "file": "writeups/posts/pie-time-2.md",
+    "level": "medium"
   }
 ]
