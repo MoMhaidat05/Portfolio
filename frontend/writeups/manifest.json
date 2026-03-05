@@ -18,5 +18,15 @@
     "image": "images/picoctf.svg",
     "file": "writeups/posts/pie-time-2.md",
     "level": "medium"
+  },
+  {
+    "id": "htb-casino",
+    "title": "HackTheBox reverse engineering casino challenge",
+    "description": "Deep dive into one of HTB reverse engineering challenges, identifing a flow in the code using ghidra and exploit it.",
+    "date": "2026-03-05",
+    "tags": ["Reverse Engineering", "HTB", "libc"],
+    "image": "images/htb.svg",
+    "file": "writeups/posts/htb-casino.md",
+    "level": "easy"
   }
 ]
