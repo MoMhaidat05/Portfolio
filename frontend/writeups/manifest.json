@@ -28,5 +28,65 @@
     "image": "images/htb.svg",
     "file": "writeups/posts/htb-casino.md",
     "level": "easy"
+  },
+  {
+    "id": "leaky-twins",
+    "title": "Leaky Twins",
+    "description": "Official solution of leaky twins crypto challenge.",
+    "date": "2026-04-21",
+    "tags": ["Crypto", "UJ", "RSA"],
+    "image": "images/uj.png",
+    "file": "writeups/posts/leaky-twins.md",
+    "level": "hard"
+  },
+  {
+    "id": "broken-company",
+    "title": "Broken Company",
+    "description": "Official solution of Broken Company crypto challenge.",
+    "date": "2026-04-21",
+    "tags": ["Crypto", "UJ", "RSA", "Low Exponent"],
+    "image": "images/uj.png",
+    "file": "writeups/posts/broken-company.md",
+    "level": "hard"
+  },
+  {
+    "id": "nested-loops",
+    "title": "Nested Loops",
+    "description": "Official solution of Nested Loops crypto challenge.",
+    "date": "2026-04-21",
+    "tags": ["Crypto", "UJ", "XOR", "Reverse Engineering"],
+    "image": "images/uj.png",
+    "file": "writeups/posts/nested-loops.md",
+    "level": "hard"
+  },
+  {
+    "id": "a-new-rsa",
+    "title": "a new RSA?",
+    "description": "Official solution of a new RSA? crypto challenge.",
+    "date": "2026-04-21",
+    "tags": ["Crypto", "UJ", "RSA"],
+    "image": "images/uj.png",
+    "file": "writeups/posts/a-new-rsa.md",
+    "level": "easy"
+  },
+  {
+    "id": "rsa-v3",
+    "title": "RSA V3.0",
+    "description": "Official solution of RSA V3.0 crypto challenge.",
+    "date": "2026-04-21",
+    "tags": ["Crypto", "UJ", "RSA"],
+    "image": "images/uj.png",
+    "file": "writeups/posts/rsa-v3.md",
+    "level": "medium"
+  },
+  {
+    "id": "dead-rsa",
+    "title": "Dead RSA",
+    "description": "Official solution of DEAD RSA crypto challenge.",
+    "date": "2026-04-21",
+    "tags": ["Crypto", "UJ", "XOR", "Custom"],
+    "image": "images/uj.png",
+    "file": "writeups/posts/dead-rsa.md",
+    "level": "medium"
   }
 ]
