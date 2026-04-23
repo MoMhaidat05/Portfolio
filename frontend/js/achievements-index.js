@@ -3,68 +3,33 @@
   var loading = document.getElementById("achievements-loading");
   var empty = document.getElementById("achievements-empty");
 
-  var CATEGORY_STYLES = {
-    "Bug Bounty": "text-primary border-primary/50 bg-primary/15",
-    Research: "text-primary border-primary/50 bg-primary/15",
-    CTF: "text-primary border-primary/50 bg-primary/15",
-    Leadership: "text-primary border-primary/50 bg-primary/15",
-    Certification: "text-primary border-primary/50 bg-primary/15",
-  };
-
-  var DOT_COLORS = {
-    "Bug Bounty": "bg-primary shadow-[0_0_8px_rgba(164,240,0,0.5)]",
-    Research: "bg-primary shadow-[0_0_8px_rgba(164,240,0,0.5)]",
-    CTF: "bg-primary shadow-[0_0_8px_rgba(164,240,0,0.5)]",
-    Leadership: "bg-primary shadow-[0_0_8px_rgba(164,240,0,0.5)]",
-    Certification: "bg-primary shadow-[0_0_8px_rgba(164,240,0,0.5)]",
-  };
-
-  function fallbackStyle() {
-    return "text-primary border-primary/50 bg-primary/15";
-  }
-
-  function fallbackDot() {
-    return "bg-primary shadow-[0_0_8px_rgba(164,240,0,0.5)]";
-  }
-
-  function buildEntry(item) {
-    var catClass = CATEGORY_STYLES[item.category] || fallbackStyle();
-    var dotClass = DOT_COLORS[item.category] || fallbackDot();
+  function buildEntry(item, index) {
+    var dotClass = index === 0 ? "timeline-dot-solid" : "timeline-dot-solid muted";
+    var dateColorClass = index === 0 ? "text-primary" : "text-text-muted";
+    var delayClass = "delay-" + ((Math.min(index + 1, 8)) * 100);
 
     var linkHtml = "";
     if (item.url) {
       linkHtml =
         '<a href="' +
         item.url +
-        '" class="inline-flex items-center gap-1.5 text-xs text-primary hover:text-secondary transition-colors duration-300 mt-2">' +
+        '" class="inline-flex items-center gap-1.5 text-xs text-primary hover:text-secondary transition-colors duration-300 mt-3">' +
         '<i class="fa-solid fa-arrow-up-right-from-square"></i>View details</a>';
     }
 
     return (
-      '<div class="relative pl-10 group">' +
-      '<div class="absolute left-0 top-1.5 w-[15px] h-[15px] rounded-full ' +
-      dotClass +
-      '"></div>' +
-      '<div class="pb-10">' +
-      '<div class="flex flex-wrap items-center gap-3 mb-2">' +
-      '<span class="text-xs secondary-font tracking-wider text-text-muted">' +
-      item.dateLabel +
-      "</span>" +
-      '<span class="text-xs px-2 py-0.5 rounded-lg border secondary-font ' +
-      catClass +
-      '">' +
-      item.category +
-      "</span>" +
-      "</div>" +
-      '<h3 class="text-text-primary text-base font-semibold leading-snug">' +
-      item.title +
-      "</h3>" +
-      '<p class="text-text-secondary text-sm leading-relaxed mt-1.5 max-w-lg">' +
-      item.description +
-      "</p>" +
-      linkHtml +
-      "</div>" +
-      "</div>"
+      '<div class="timeline-entry animate-fade-in-up ' + delayClass + '">' +
+        '<div class="' + dotClass + '"></div>' +
+        '<div class="card p-6">' +
+          '<div class="flex flex-wrap items-center gap-3 mb-2">' +
+            '<span class="text-xs secondary-font tracking-wider ' + dateColorClass + '">' + item.dateLabel + '</span>' +
+            '<span class="tag">' + item.category + '</span>' +
+          '</div>' +
+          '<h3 class="text-text-primary text-base font-semibold heading-font leading-snug">' + item.title + '</h3>' +
+          '<p class="text-text-secondary text-sm leading-relaxed mt-1.5 max-w-xl">' + item.description + '</p>' +
+          linkHtml +
+        '</div>' +
+      '</div>'
     );
   }
 

@@ -49,16 +49,10 @@
       '<span><i class="fa-solid fa-user mr-1.5"></i>Mohammad AlMusa</span>',
     ].join("");
 
-    const tagColors = ["bg-primary/20 border-primary/50 text-primary"];
-
     elTags.innerHTML = meta.tags
       .map(
-        (tag, i) =>
-          '<span class="text-xs px-2.5 py-0.5 rounded-lg border ' +
-          tagColors[i % tagColors.length] +
-          '">#' +
-          tag +
-          "</span>",
+        (tag) =>
+          '<span class="tag">#' + tag + "</span>",
       )
       .join("");
 

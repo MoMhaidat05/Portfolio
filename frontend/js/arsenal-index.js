@@ -3,45 +3,24 @@
   var loading = document.getElementById("arsenal-loading");
   var empty = document.getElementById("arsenal-empty");
 
-  var TAG_COLORS = ["bg-primary/15 border-primary/40 text-primary"];
-
-  function buildCard(item) {
+  function buildCard(item, index) {
     var tags = item.tags
-      .map(function (tag, i) {
-        return (
-          '<span class="text-xs px-2 py-0.5 rounded-lg border secondary-font ' +
-          TAG_COLORS[i % TAG_COLORS.length] +
-          '">' +
-          tag +
-          "</span>"
-        );
+      .map(function (tag) {
+        return '<span class="tag">#' + tag + "</span>";
       })
       .join("");
 
+    var delayClass = "delay-" + ((Math.min(index + 1, 8)) * 100);
+
     return (
-      '<a href="' +
-      item.link +
-      '" target="_blank" rel="noopener noreferrer" class="group flex flex-col bg-surface border border-border rounded-xl overflow-hidden hover:border-primary/60 hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(164,240,0,0.06)] transition-all duration-300">' +
-      (item.image
-        ? '<div class="w-full h-36 overflow-hidden bg-background"><img src="' +
-          item.image +
-          '" alt="" class="w-full h-full object-contain object-center group-hover:scale-105 transition-transform duration-500" /></div>'
-        : "") +
-      '<div class="flex flex-col gap-3 p-5 flex-1">' +
-      '<h3 class="text-text-primary text-base font-semibold leading-snug group-hover:text-primary transition-colors duration-300">' +
-      item.title +
-      "</h3>" +
-      '<p class="text-text-secondary text-sm leading-relaxed line-clamp-3">' +
-      item.description +
-      "</p>" +
-      '<div class="flex flex-wrap gap-2 mt-auto pt-2">' +
-      tags +
-      "</div>" +
-      '<div class="flex items-center justify-between mt-3 pt-3 border-t border-border/60">' +
-      '<span class="text-xs text-text-muted secondary-font"><i class="fa-brands fa-github mr-1.5"></i>View Repo</span>' +
-      '<span class="text-xs text-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>' +
-      "</div>" +
-      "</div>" +
+      '<a href="' + item.link + '" target="_blank" rel="noopener noreferrer" class="card relative flex flex-col p-6 md:p-8 group animate-fade-in-up ' + delayClass + '">' +
+        '<div class="flex items-center justify-between mb-4">' +
+          '<span class="text-xs text-text-muted secondary-font"><i class="fa-brands fa-github mr-1.5"></i>Repository</span>' +
+          '<i class="fa-solid fa-arrow-up-right-from-square text-text-muted group-hover:text-primary transition-colors duration-300"></i>' +
+        "</div>" +
+        '<h3 class="text-text-primary text-lg font-bold leading-snug heading-font group-hover:text-primary transition-colors duration-300 mb-2">' + item.title + "</h3>" +
+        '<p class="text-text-secondary text-sm leading-relaxed line-clamp-3 mb-5">' + item.description + "</p>" +
+        '<div class="flex flex-wrap gap-1.5 mt-auto">' + tags + "</div>" +
       "</a>"
     );
   }
