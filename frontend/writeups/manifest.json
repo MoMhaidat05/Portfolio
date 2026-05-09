@@ -88,5 +88,25 @@
     "image": "images/uj.png",
     "file": "writeups/posts/dead-rsa.md",
     "level": "medium"
+  },
+  {
+    "id": "whisper-whisper-whisper",
+    "title": "Whisper Whisper Whisper",
+    "description": "Official solution of Whisper Whisper Whisper reverse engineering challenge.",
+    "date": "2026-05-09",
+    "tags": ["Reverse Engineering", "UJ", "XOR", "Ghidra"],
+    "image": "images/uj.png",
+    "file": "writeups/posts/whisper-whisper-whisper.md",
+    "level": "medium"
+  },
+  {
+    "id": "math-tiles",
+    "title": "Math Tiles",
+    "description": "Official solution of Math Tiles reverse engineering challenge.",
+    "date": "2026-05-09",
+    "tags": ["Reverse Engineering", "UJ", "Math", "Ghidra"],
+    "image": "images/uj.png",
+    "file": "writeups/posts/math-tiles.md",
+    "level": "medium"
   }
 ]
